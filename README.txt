@@ -1,6 +1,6 @@
-##PROGRAM 2:SIMPLE PROGRAM USING VARIABLES AND OPERATORS
+# PROGRAM 2:SIMPLE PROGRAM USING VARIABLES AND OPERATORS
 
-#1.Food Relation Program
+## 1.Food Relation Program
 % Facts
 food(burger).
 food(sandwich).
@@ -17,7 +17,7 @@ meal(X) :- food(X).
 % ?- dinner(sandwich).
 
 
-#2.Student-Teacher Relation Program
+## 2.Student-Teacher Relation Program
 % Facts
 studies(charlie, csc135).
 studies(olivia, csc135).
@@ -39,7 +39,7 @@ professor(X, Y) :-
 % ?- professor(kirke, Students).
 
 
-#3.Family Relationships
+## 3.Family Relationships
 
 % Predicates
 parent(a, b).
@@ -53,7 +53,7 @@ mother(X, Y) :- female(X), parent(X, Y).
 grandparent(X, Y) :- parent(X, Z), parent(Z, Y).
 brother(X, Y) :- male(X), parent(V, X), parent(V, Y).
 
-#4.Animal Characteristics
+## 4.Animal Characteristics
 
 % Facts
 small(rat).
@@ -68,7 +68,7 @@ color(X, dark) :-
     color(X, brown).
 
 
-#4.Integer Variable Usage
+## 4.Integer Variable Usage
 
 % Predicate
 go :-
@@ -77,7 +77,7 @@ go :-
     X = 20,
     write(X), nl.
 
-#5.Add Two Numbers
+## 5.Add Two Numbers
 
 % Predicate
 add :-
@@ -87,7 +87,7 @@ add :-
     write("Output = "), write(Z), nl.
 
 
-#6.Arithmetic Operations
+## 6.Arithmetic Operations
 
 % Example Queries:
 % ?- X is 3+2. → `X = 5`.
@@ -96,7 +96,7 @@ add :-
 % ?- X is 5^3. → `X = 125`.
 
 
-#7.Add Two Numbers
+## 7.Add Two Numbers
 
 % Predicate
 add :-
@@ -106,7 +106,7 @@ add :-
     write("Output = "), write(Z), nl.
 
 
-#8.Reading Address with Compound Variable
+## 8.Reading Address with Compound Variable
 
 % Domains
 person = address(name, street, city, state, zip).
@@ -134,14 +134,14 @@ readaddress(address(N, S, C, St, Z)) :-
     write("State: "), readln(St),
     write("Zip: "), readln(Z).
 
-#9.Cut Operator
+## 9.Cut Operator
 
 % Predicate
 fun(Y, 1) :- Y < 3, !.
 fun(Y, 2) :- Y > 3, Y =< 10, !.
 fun(Y, 3) :- Y > 10, !.
 
-#10.Towers of Hanoi
+## 10.Towers of Hanoi
 move(1, X, Y, _) :-
     write('Move top disk from '),
     write(X), write(' to '), write(Y), nl.
