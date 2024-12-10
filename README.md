@@ -6,7 +6,11 @@ This program demonstrates various concepts using logic programming, including re
 
 ## 1. Food Relation Program
 ### Facts
-`food(burger). food(sandwich). food(pizza). lunch(sandwich). dinner(pizza).`
+`food(burger). 
+food(sandwich). 
+food(pizza). 
+lunch(sandwich). 
+dinner(pizza).`
 
 ### Rules
 `meal(X) :- food(X).`
