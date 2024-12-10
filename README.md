@@ -1,7 +1,5 @@
 # Program 2: Simple Program Using Variables and Operators
 
-This program demonstrates various concepts using logic programming, including relationships, arithmetic operations, and recursive algorithms.
-
 ---
 
 ## 1. Food Relation Program
